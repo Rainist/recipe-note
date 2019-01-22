@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  note:
+    image: rainist/recipe-note:0.1.0
+    volumes:
+      - .workdir:/note
+    stdin_open: true
+    tty: true
