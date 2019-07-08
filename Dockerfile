@@ -5,7 +5,7 @@ LABEL maintainer="Rainist Engineering <engineering@rainist.com>"
 WORKDIR /note
 
 RUN apt-get update && \
-    apt-get install -y wget unzip
+    apt-get install -y wget unzip sshpass
 
 ARG ANSIBLE_VERSION=2.7.6
 RUN pip install ansible==${ANSIBLE_VERSION}
